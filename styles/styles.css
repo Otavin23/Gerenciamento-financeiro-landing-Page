@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #E2E2FB;
+  height: 4rem;
+}
+header .logo {
+  font-family: "Poppins", sans-serif;
+}
+header .logo h1 {
+  font-size: 26px;
+  text-transform: capitalize;
+}
+header ul {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  list-style: none;
+}
+header ul li {
+  padding: 1rem;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.header-container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.path-buttons {
+  font-family: "Manrope", sans-serif;
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.path-buttons #button-sing {
+  background: red;
+  border: none;
+  background: transparent;
+  text-transform: capitalize;
+  font-weight: 500;
+  width: 137px;
+  height: 52px;
+}
+.path-buttons #button-startF {
+  text-transform: capitalize;
+  background: #4F46BA;
+  width: 137px;
+  height: 40px;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.payments {
+  background: #E2E2FB;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-payments {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 4rem 0 0 0;
+}
+
+.information-payments {
+  font-family: "Manrope", sans-serif;
+}
+.information-payments h2 {
+  font-size: 53px;
+  max-width: 600px;
+  font-weight: 800;
+}
+.information-payments p {
+  margin: 0.5em 0 0 0;
+  color: #757095;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  max-width: 600px;
+}
+
+.start-buttons {
+  font-family: "Manrope";
+  margin: 2em 0 0 0;
+}
+.start-buttons #start-button {
+  border: none;
+  background: #3734A9;
+  width: 120px;
+  height: 45px;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+.start-buttons #shee-button {
+  border: none;
+  background: transparent;
+  margin: 0 0 0 1rem;
+  color: #3734A9;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.show-complete {
+  margin: 2rem 0 0 0;
+  display: flex;
+}
+.show-complete .circle {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.show-complete .circle div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3734A9;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.show-complete .circle p {
+  margin: 0 0 0 0.3rem;
+  text-transform: capitalize;
+}
+
+.payments-image {
+  display: flex;
+  position: absolute;
+  right: 1px;
+}
+
+.cards_payments {
+  position: absolute;
+  left: 10px;
+  top: 190px;
+}
+.cards_payments .revenue {
+  background: #ffffff;
+  height: 112px;
+  width: 170px;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards_payments .revenue .container_revenue {
+  width: 90%;
+  height: 80%;
+}
+
+.container_revenue {
+  font-family: "Manrope";
+}
+.container_revenue p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #718ebf;
+}
+
+.revenue_active {
+  display: flex;
+  align-items: center;
+  font-family: "Manrope";
+}
+.revenue_active div {
+  background: #00E1F0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.revenue_active p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 0.4rem;
+  text-transform: capitalize;
+}
+
+.prices_revenue {
+  font-family: "Manrope";
+  display: flex;
+  margin-top: 0.5rem;
+}
+.prices_revenue p {
+  font-weight: bold;
+  line-height: 22px;
+  color: #000000;
+}
+.prices_revenue .blue_prices {
+  color: #00E1F0;
+  font-size: 14px;
+  padding-left: 0.2rem;
+}
+
+.total_balance {
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 205px;
+  height: 120px;
+  background: #ffffff;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+  border-radius: 10px;
+}
+
+.total_container {
+  width: 90%;
+  height: 90%;
+  font-family: "Manrope";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.total_container p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.partnership {
+  background: #FAFBFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  font-family: "Manrope";
+}
+.partnership p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 2rem;
+}
+
+.block_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #FAFBFF;
+}
+
+.block_container {
+  width: 85%;
+  height: 100%;
+  margin-top: 14em;
+  font-family: "Manrope";
+}
+.block_container .text_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+}
+.block_container .text_card p {
+  color: #3734A9;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 25px;
+}
+.block_container .text_card h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 69px;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+.block_container .text_card #title_users {
+  max-width: 350px;
+  line-height: 60px;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 13rem;
+}
+
+.cards {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.cards div {
+  max-width: 335px;
+  height: 220px;
+}
+.cards .card_information {
+  font-family: "Manrope";
+  margin-top: 1.5rem;
+}
+.cards .card_information h2 {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+}
+.cards .card_information p {
+  margin-top: 1.5rem;
+  color: #757095;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+
+.features {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #FAFBFF;
+}
+
+.features_container {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.features_container span {
+  position: relative;
+  right: -400px;
+  top: 110px;
+}
+
+.features_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Manrope";
+  max-width: 45%;
+}
+.features_information #title_reatures {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 25px;
+  color: #3734A9;
+  text-transform: uppercase;
+}
+.features_information h2 {
+  text-transform: capitalize;
+  letter-spacing: -0.03em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+}
+.features_information #information_payments {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757095;
+  letter-spacing: -0.02em;
+  margin-top: 1rem;
+}
+.features_information button {
+  border: none;
+  width: 162px;
+  height: 60px;
+  border-radius: 7px;
+  text-transform: capitalize;
+  background: #3734A9;
+  margin-top: 1rem;
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+
+.singup_newslette {
+  font-family: "Manrope";
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.singup_newslette p {
+  color: #3734A9;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+.singup_newslette input {
+  width: 356px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 1rem;
+  margin: 1rem 0 1rem 0;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #64607D;
+}
+.singup_newslette input::-moz-placeholder {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #64607D;
+  padding-left: 1rem;
+}
+.singup_newslette input:-ms-input-placeholder {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #64607D;
+  padding-left: 1rem;
+}
+.singup_newslette input::placeholder {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #64607D;
+  padding-left: 1rem;
+}
+.singup_newslette button {
+  width: 356px;
+  height: 60px;
+  background: #FF7F5C;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}/*# sourceMappingURL=styles.css.map */
