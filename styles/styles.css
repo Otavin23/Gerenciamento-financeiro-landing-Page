@@ -16,6 +16,19 @@
   justify-content: center;
 }
 
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex__between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: red;
+}
+
 .container {
   width: 90%;
   height: 100%;
@@ -33,7 +46,39 @@
   background: var(--background);
 }
 
-.background__information {
+.button--primary {
+  border: none;
+  width: 162px;
+  height: 60px;
+  border-radius: 7px;
+  text-transform: capitalize;
+  background: #3734a9;
+  margin-top: 1rem;
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+
+.button--secondary {
+  width: 129px;
+  height: 30px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  border: none;
+  background: transparent;
+  margin-left: 1rem;
+  /* identical to box height, or 176% */
+  letter-spacing: -0.02em;
+  /* Pallet 4 / Primary */
+  color: #3734A9;
+}
+
+.information--text {
   font-family: "Manrope", sans-serif;
   width: 70%;
   height: 100%;
@@ -41,12 +86,12 @@
   flex-direction: column;
   justify-content: center;
 }
-.background__information h2 {
+.information--text h2 {
   font-size: 53px;
   max-width: 600px;
   font-weight: 800;
 }
-.background__information p {
+.information--text p {
   margin: 0.5em 0 0 0;
   color: #757095;
   font-weight: 400;
@@ -112,7 +157,7 @@ header .nav__buttons #button--secondary {
 }
 
 .companies {
-  height: 30vh;
+  height: 55vh;
   background: var(--background_secundary);
   display: flex;
   justify-content: center;
@@ -131,6 +176,185 @@ header .nav__buttons #button--secondary {
 }
 .companies #companies__partners span {
   margin-right: 1.5rem;
+}
+
+.fast__resume {
+  background: var(--background_secundary);
+  display: flex;
+  align-items: flex-end;
+  height: 120vh;
+}
+
+.fast_resume_c {
+  height: 90%;
+}
+
+.fast_resume--text {
+  font-family: "Manrope";
+  text-align: center;
+}
+.fast_resume--text p {
+  color: #3734a9;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 25px;
+}
+.fast_resume--text h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 69px;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.fast__cards {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card--information {
+  font-family: "Manrope";
+  margin-top: 1.5rem;
+}
+.card--information h2 {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+}
+.card--information p {
+  margin-top: 1.5rem;
+  color: #757095;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+
+.card {
+  margin-right: 1rem;
+  width: 367px;
+  height: 428px;
+}
+
+.fast__payment {
+  background: var(--background_secundary);
+}
+
+.keep__updated {
+  background: var(--background_secundary);
+}
+
+.keep__udated--information {
+  font-family: "Manrope";
+  max-width: 500px;
+}
+.keep__udated--information #keep_udated__text--primary {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 25px;
+  color: #3734a9;
+  text-transform: uppercase;
+}
+.keep__udated--information h2 {
+  text-transform: capitalize;
+  letter-spacing: -0.03em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+}
+.keep__udated--information #keep_updated__text--secondary {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757095;
+  letter-spacing: -0.02em;
+  margin-top: 1rem;
+}
+
+.form__singup {
+  font-family: "Manrope";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+.form__singup p {
+  color: #3734a9;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+.form__singup input {
+  width: 356px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 1rem;
+  margin: 1rem 0 1rem 0;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #64607d;
+}
+.form__singup input::-moz-placeholder {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #64607d;
+  padding-left: 1rem;
+}
+.form__singup input:-ms-input-placeholder {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #64607d;
+  padding-left: 1rem;
+}
+.form__singup input::placeholder {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #64607d;
+  padding-left: 1rem;
+}
+.form__singup button {
+  width: 356px;
+  height: 60px;
+  background: #ff7f5c;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#keep_updated--img {
+  position: relative;
+  top: -200px;
+  left: 500px;
+}
+
+.title_reatures {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 25px;
+  color: #3734a9;
+  text-transform: uppercase;
+}
+
+.information_payments {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757095;
+  letter-spacing: -0.02em;
+  margin-top: 1rem;
 }
 
 .start-buttons {
@@ -300,76 +524,6 @@ header .nav__buttons #button--secondary {
   font-size: 18px;
   line-height: 30px;
   margin: 2rem;
-}
-
-.block_card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #fafbff;
-}
-
-.block_container {
-  width: 85%;
-  height: 100%;
-  margin-top: 14em;
-  font-family: "Manrope";
-}
-.block_container .text_card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 3.5rem;
-}
-.block_container .text_card p {
-  color: #3734a9;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 25px;
-}
-.block_container .text_card h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 69px;
-  text-align: center;
-  letter-spacing: -0.03em;
-}
-.block_container .text_card #title_users {
-  max-width: 350px;
-  line-height: 60px;
-  font-size: 45px;
-  text-align: center;
-  margin-bottom: 13rem;
-}
-
-.cards {
-  margin-top: 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-}
-.cards div {
-  max-width: 335px;
-  height: 220px;
-}
-.cards .card_information {
-  font-family: "Manrope";
-  margin-top: 1.5rem;
-}
-.cards .card_information h2 {
-  font-size: 21px;
-  font-weight: 800;
-  line-height: 30px;
-  letter-spacing: -0.03em;
-}
-.cards .card_information p {
-  margin-top: 1.5rem;
-  color: #757095;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: -0.02em;
 }
 
 .features {
