@@ -6,6 +6,9 @@
 :root{
   --background: #e2e2fb;
   --background_secundary: #fafbff;
+  --text__color--blue: #3734a9; 
+  --li__nav: #757095;
+
 } 
 .flex__column{
   display: flex;
@@ -327,18 +330,15 @@ header {
   left: 500px;
 }
 
+.manage__expenses{
+  background: var(--background_secundary)
+}
+.manage__expenses--information{
+      font-family: 'Manrope';
 
+}
 
-
-
-
-
-
-
-
-
-
-.title_reatures {
+.title--primary{
   font-style: normal;
   font-weight: 800;
   font-size: 15px;
@@ -346,397 +346,78 @@ header {
   color: #3734a9;
   text-transform: uppercase;
 }
-
-.information_payments {
+.title--secondary{
   font-weight: 400;
   font-size: 16px;
   color: #757095;
   letter-spacing: -0.02em;
   margin-top: 1rem;
 }
-
-
-.start-buttons {
-  font-family: "Manrope";
-  margin: 2em 0 0 0;
-
-  #start-button {
-    border: none;
-    background: #3734a9;
-    width: 120px;
-    height: 45px;
-    color: white;
-    text-transform: capitalize;
-    border-radius: 7px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-  }
-  #shee-button {
-    border: none;
-    background: transparent;
-    margin: 0 0 0 1rem;
-    color: #3734a9;
-    letter-spacing: -0.02em;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: capitalize;
-  }
-}
-.show-complete {
-  margin: 2rem 0 0 0;
-  display: flex;
-
-  .circle {
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
-    div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #3734a9;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-    }
-    p {
-      margin: 0 0 0 0.3rem;
-      text-transform: capitalize;
-    }
-  }
-}
-
-.payments_image {
-  display: flex;
-  position: absolute;
-  right: 1px;
-  img {
-    max-width: 800px;
-    max-height: 800px;
-  }
-}
-.cards_payments {
-  position: absolute;
-  left: 10px;
-  top: 190px;
-
-  .revenue {
-    background: #ffffff;
-    height: 112px;
-    width: 170px;
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
-      0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
-      0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
-      0px 20px 13px rgba(0, 0, 0, 0.015),
-      0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
-      0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .container_revenue {
-      width: 90%;
-      height: 80%;
-    }
-  }
-}
-.container_revenue {
-  font-family: "Manrope";
-  p {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 15px;
-    color: #718ebf;
-  }
-}
-.revenue_active {
-  display: flex;
-  align-items: center;
-  font-family: "Manrope";
-  div {
-    background: #00e1f0;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-  }
-  p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    margin-left: 0.4rem;
-    text-transform: capitalize;
-  }
-}
-.prices_revenue {
-  font-family: "Manrope";
-  display: flex;
-  margin-top: 0.5rem;
-  p {
-    font-weight: bold;
-    line-height: 22px;
-    color: #000000;
-  }
-  .blue_prices {
-    color: #00e1f0;
-    font-size: 14px;
-    padding-left: 0.2rem;
-  }
-}
-
-.total_balance {
-  display: Flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  width: 205px;
-  height: 120px;
-  background: #ffffff;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
-    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
-    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
-    0px 20px 13px rgba(0, 0, 0, 0.015),
-    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
-    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
-  border-radius: 10px;
-}
-.total_container {
-  width: 90%;
-  height: 90%;
-  font-family: "Manrope";
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-  }
-}
-
-.partnership {
-  background: #fafbff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 30vh;
-  font-family: "Manrope";
-
-  p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    margin: 2rem;
-  }
-}
-
-
-.features {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background: #fafbff;
-}
-
-.features_container {
-  width: 85%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  span {
-    position: relative;
-    right: -400px;
-    top: 110px;
-  }
-}
-.features_information {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  font-family: "Manrope";
-  max-width: 45%;
-  #title_reatures {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 15px;
-    line-height: 25px;
-    color: #3734a9;
-    text-transform: uppercase;
-  }
-  h2 {
+.title--h2{
     text-transform: capitalize;
     letter-spacing: -0.03em;
     font-style: normal;
     font-weight: 700;
     font-size: 33px;
-  }
-
-  #information_payments {
-    font-weight: 400;
-    font-size: 16px;
-    color: #757095;
-    letter-spacing: -0.02em;
-    margin-top: 1rem;
-  }
-  button {
-    border: none;
-    width: 162px;
-    height: 60px;
-    border-radius: 7px;
-    text-transform: capitalize;
-    background: #3734a9;
-    margin-top: 1rem;
-    color: white;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: -0.02em;
-    cursor: pointer;
-  }
 }
-.singup_newslette {
-  font-family: "Manrope";
-  width: 50%;
+
+.happy--container{
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  p {
-    color: #3734a9;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: -0.02em;
-  }
-  input {
-    width: 356px;
-    height: 60px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-
-    padding-left: 1rem;
-    margin: 1rem 0 1rem 0;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-    color: #64607d;
-    &::placeholder {
-      font-size: 16px;
-      letter-spacing: -0.02em;
-      color: #64607d;
-      padding-left: 1rem;
-    }
-  }
-  button {
-    width: 356px;
-    height: 60px;
-    background: #ff7f5c;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 30px;
-    /* identical to box height, or 188% */
-    cursor: pointer;
-    text-align: center;
-    text-transform: uppercase;
-
-    color: #ffffff;
-  }
-}
-
-.shakir_title{
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-family: "Manrope";
-
-  h2{
-      font-size: 35px;
-      font-weight: 800;
-      line-height: 30px;
-      letter-spacing: -0.03em;
-      text-transform: capitalize;
-      margin-bottom: 1rem;
-  }
-  p{
-      color: #757095;
-      font-weight: 400;
-      font-size: 17px;
-      letter-spacing: -0.02em;
-      text-transform: capitalize;
-      max-width: 550px;
-      text-align: center;
-      margin-bottom: 1rem;
-  }
-  button{
-    border: none;
-    width: 162px;
-    height: 60px;
-    border-radius: 7px;
-    text-transform: capitalize;
-    background: #3734a9;
-    margin-top: 1rem;
-    color: white;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: -0.02em;
-    cursor: pointer;
-  }
 }
-.image_shakir{
+.happy__peoples{
+  height: 0%;
+  background: var(--background_secundary)
+}
+
+.happy__peoples--text{
+    font-family: 'Manrope';
+    text-align: center;
+
+
+    padding: 2rem;
+    h2{
+      max-width: 300px;
+    }
+
+}
+.happy__peoples--cards{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  span{
+    margin-right: 1rem;
+  }
+    img{
+      max-width: 383px;
+      max-height: 285px;
+    }
+}
+.assistance__finances{
+  background: var(--background_secundary);
   img{
     position: relative;
-    top: -150px;
-    left: -100px;
+    left: -200px;
+    top: -100px;
   }
-
 }
-.footer_shakir{
-  width: 100%;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  nav{
-
-    display: flex;
-    width: 70%;
-    .company{
-      font-family: "Manrope";
-      margin-right: 4rem;
-      list-style: none;
-      li{
-        margin-top: 0.5rem;
-      }
-      h2{
-      text-transform: capitalize;
-      font-size: 17px;
-      }
-      li{
-      color: #757095;
-      font-size: 15px;
-      letter-spacing: -0.02em;
-      text-transform: capitalize;
-      }
+.assistance_finanes--information{
+    font-family: 'Manrope';
+    text-align: center;
+    p{
+      max-width: 500px;
     }
-  }
+
 }
-.shakir_container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
+
+
+.footer__finances--b{
+  background: var(--background_secundary);
+  height: 50%;
+  padding: 2.5rem;
 }
-#footer_title{
+#footer_finances{
     font-family: "Manrope";
     h2{
       text-transform: uppercase;
@@ -752,24 +433,48 @@ header {
       max-width:242px;
     }
 }
-.shakir_links{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: flex-end;
-  max-width: 150px;
-  height: 2.5rem;
-}
 
-.contact{
+.footer__block{
+  display: flex;
+  width: 70%;
+      .footer__block--text{
+      font-family: "Manrope";
+      margin-right: 4rem;
+      list-style: none;
+      li{
+        margin-top: 0.5rem;
+      }
+      h2{
+      text-transform: capitalize;
+      font-size: 17px;
+      }
+      li{
+      color: var(--li__nav);
+      font-size: 15px;
+      letter-spacing: -0.02em;
+      text-transform: capitalize;
+      }
+    }
+}
+.footer--icon{
   li{
     display: flex;
-    align-items: center;
+  }
     span{
       height: 100%;
       display: flex;
       align-items: center;
       margin-right: 0.5rem;
     }
-  }
 }
+
+
+
+
+
+
+
+
+
+
+
