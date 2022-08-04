@@ -39,18 +39,39 @@
   align-items: center;
 }
 
-.painel__background {
+.to__manage {
   display: flex;
-  justify-content: flex-end;
-  background: red;
-  position: relative;
+  background: yellow;
+  justify-content: space-between;
 }
-.painel__background img {
-  background: blue;
-  position: relative;
-  display: flex;
-  align-items: center;
+
+#painel__img {
+  position: absolute;
   right: 1px;
+  width: 650px;
+  height: 547px;
+  display: none;
+}
+
+.information__button {
+  display: flex;
+  margin-top: 1rem;
+}
+@media (max-width: 452px) {
+  .information__button {
+    flex-direction: column;
+  }
+}
+.information__button span {
+  display: flex;
+  margin-right: 1rem;
+  width: 150px;
+  align-items: center;
+}
+.information__button span p {
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .background {
@@ -78,6 +99,7 @@
 }
 
 .button--secondary {
+  margin-top: 1rem;
   width: 129px;
   height: 30px;
   font-family: "Manrope";
@@ -91,7 +113,7 @@
   /* identical to box height, or 176% */
   letter-spacing: -0.02em;
   /* Pallet 4 / Primary */
-  color: #3734A9;
+  color: #3734a9;
 }
 
 .information--text {
@@ -103,7 +125,7 @@
   justify-content: center;
 }
 .information--text h2 {
-  font-size: 53px;
+  font-size: clamp(1.5rem, 5vh, 2rem);
   max-width: 600px;
   font-weight: 800;
 }
@@ -111,7 +133,7 @@
   margin: 0.5em 0 0 0;
   color: #757095;
   font-weight: 400;
-  font-size: 18px;
+  font-size: clamp(1rem, 1vh, 1.2rem);
   line-height: 30px;
   letter-spacing: -0.02em;
   max-width: 600px;
@@ -125,8 +147,6 @@ header {
 }
 header .header__logo {
   font-family: "Poppins", sans-serif;
-}
-header .header__logo h1 {
   font-size: 26px;
   text-transform: capitalize;
 }
@@ -135,29 +155,67 @@ header .nav__links {
   display: flex;
   list-style: none;
 }
+@media (max-width: 893px) {
+  header .nav__links {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 681px) {
+  header .nav__links {
+    display: none;
+  }
+}
 header .nav__links li {
   padding: 1rem;
   font-size: 14px;
   line-height: 19px;
   font-weight: 500;
 }
+header .nav__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  height: 75%;
+}
+@media (max-width: 681px) {
+  header .nav__buttons {
+    display: none;
+  }
+}
 header .nav__buttons #button--primary {
-  background: red;
   border: none;
   background: transparent;
   text-transform: capitalize;
   font-weight: 500;
   width: 137px;
-  height: 52px;
+  height: 100%;
+}
+@media (max-width: 893px) {
+  header .nav__buttons #button--primary {
+    width: 100%;
+    justify-content: center;
+  }
 }
 header .nav__buttons #button--secondary {
   text-transform: capitalize;
   background: #4f46ba;
   width: 137px;
-  height: 40px;
+  height: 100%;
   border: none;
   color: #ffffff;
   font-weight: 500;
+}
+
+.menu__hambuguer {
+  display: none;
+}
+@media (max-width: 681px) {
+  .menu__hambuguer {
+    cursor: pointer;
+    display: flex;
+  }
 }
 
 .painel__background {
@@ -173,32 +231,42 @@ header .nav__buttons #button--secondary {
 }
 
 .companies {
-  height: 55vh;
   background: var(--background_secundary);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 5rem 0 5rem 0;
 }
 .companies #companies__help {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: clamp(1.2rem, 1vh, 1.3rem);
   line-height: 30px;
   /* identical to box height */
   margin-bottom: 2rem;
   text-align: center;
 }
+.companies #companies__partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .companies #companies__partners span {
   margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.companies__container {
+  display: flex;
+  justify-content: center;
 }
 
 .fast__resume {
   background: var(--background_secundary);
   display: flex;
   align-items: flex-end;
-  height: 120vh;
 }
 
 .fast_resume_c {
@@ -212,14 +280,14 @@ header .nav__buttons #button--secondary {
 .fast_resume--text p {
   color: #3734a9;
   font-weight: 800;
-  font-size: 16px;
+  font-size: clamp(1rem, 1vh, 1rem);
   line-height: 25px;
 }
 .fast_resume--text h2 {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 69px;
+  font-size: clamp(1.5rem, 2vh, 2rem);
   text-align: center;
+  margin-top: 0.5rem;
   letter-spacing: -0.03em;
 }
 
@@ -227,7 +295,12 @@ header .nav__buttons #button--secondary {
   margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
-  height: 100%;
+  flex-wrap: wrap;
+}
+@media (max-width: 1115px) {
+  .fast__cards {
+    justify-content: center;
+  }
 }
 
 .card--information {
@@ -253,13 +326,48 @@ header .nav__buttons #button--secondary {
   width: 367px;
   height: 428px;
 }
+@media (max-width: 423px) {
+  .card {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+  }
+  .card img {
+    width: 100%;
+  }
+}
+@media (max-width: 321px) {
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+}
 
 .fast__payment {
   background: var(--background_secundary);
+  height: 0%;
+  padding-top: 10rem;
+}
+@media (max-width: 873px) {
+  .fast__payment img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 881px) {
+  .fast_payment--container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .keep__updated {
   background: var(--background_secundary);
+}
+@media (max-width: 478px) {
+  .keep__updated {
+    padding-top: 4rem;
+  }
 }
 
 .keep__udated--information {
@@ -289,12 +397,19 @@ header .nav__buttons #button--secondary {
   margin-top: 1rem;
 }
 
+@media (max-width: 888px) {
+  .keep__updated--container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .form__singup {
   font-family: "Manrope";
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 35%;
 }
 .form__singup p {
   color: #3734a9;
@@ -304,7 +419,6 @@ header .nav__buttons #button--secondary {
   letter-spacing: -0.02em;
 }
 .form__singup input {
-  width: 356px;
   height: 60px;
   border: none;
   border-radius: 5px;
@@ -334,7 +448,6 @@ header .nav__buttons #button--secondary {
   padding-left: 1rem;
 }
 .form__singup button {
-  width: 356px;
   height: 60px;
   background: #ff7f5c;
   border-radius: 5px;
@@ -349,15 +462,55 @@ header .nav__buttons #button--secondary {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media (max-width: 398px) {
+  .form__singup {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 888px) {
+  .form__singup {
+    width: 100%;
+  }
+}
+@media (max-width: 398px) {
+  .form__singup {
+    max-width: 300px;
+  }
+}
 
 #keep_updated--img {
   position: relative;
   top: -200px;
-  left: 500px;
+  left: 450px;
+}
+@media (max-width: 993px) {
+  #keep_updated--img {
+    display: none;
+  }
+}
+@media (max-width: 1115px) {
+  #keep_updated--img {
+    left: 340px;
+  }
+}
+@media (max-width: 888px) {
+  #keep_updated--img {
+    display: none;
+  }
 }
 
 .manage__expenses {
   background: var(--background_secundary);
+}
+
+@media (max-width: 924px) {
+  .manage__expenses--container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .manage__expenses--container img {
+    display: none;
+  }
 }
 
 .manage__expenses--information {
@@ -413,6 +566,7 @@ header .nav__buttons #button--secondary {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .happy__peoples--cards span {
   margin-right: 1rem;
@@ -420,6 +574,18 @@ header .nav__buttons #button--secondary {
 .happy__peoples--cards img {
   max-width: 383px;
   max-height: 285px;
+}
+@media (max-width: 431px) {
+  .happy__peoples--cards img {
+    max-width: 340px;
+    height: 250px;
+  }
+}
+@media (max-width: 360px) {
+  .happy__peoples--cards img {
+    max-width: 300px;
+    height: 250px;
+  }
 }
 
 .assistance__finances {
@@ -429,6 +595,11 @@ header .nav__buttons #button--secondary {
   position: relative;
   left: -200px;
   top: -100px;
+}
+@media (max-width: 735px) {
+  .assistance__finances img {
+    display: none;
+  }
 }
 
 .assistance_finanes--information {

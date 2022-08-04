@@ -22,7 +22,6 @@
   </head>
 
   <body>
-
     <header class="header">
       <div class="container">
         <h1 class="header__logo">sharkFinances</h1>
@@ -40,10 +39,15 @@
           <button id="button--primary">sing in</button>
           <button id="button--secondary">start free</button>
         </div>
+
+        <span class="menu__hambuguer">
+          <img src="./assets/icons8-menu-24.png" alt="menu__hamguer" />
+        </span>
+
       </div>
     </header>
-    
-    <section class="background">
+
+    <section class="to__manage background">
       <div class="container">
         <div class="information--text">
           <h2>Gerenciar pagamentos de negócios nunca foi tão fácil</h2>
@@ -52,105 +56,78 @@
             solução. Conheça a plataforma certa para ajudar a perceber.
           </p>
 
-          <div class="buttons">
+          <div class="to__manage--buttons">
             <button class="button--primary">get started</button>
             <button class="button--secondary">see how it works</button>
           </div>
 
-          <div class="show-complete">
-            <div class="circle">
-              <div>
-                <svg
-                  width="10"
-                  height="8"
-                  viewBox="0 0 10 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 4L3.8 7L9 1"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-
+          <div class="information__button">
+            <span>
+              <img src="./assets/Group 155.png" alt="group__painel--primary" />
               <p>free register</p>
-            </div>
+            </span>
 
-            <div class="circle">
-              <div>
-                <svg
-                  width="10"
-                  height="8"
-                  viewBox="0 0 10 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 4L3.8 7L9 1"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-
+            <span>
+              <img
+                src="./assets/Group 155.png"
+                alt="group__painel--secondary"
+              />
               <p>great service</p>
-            </div>
+            </span>
           </div>
+
         </div>
-        <div class="painel__background">
-          <img src="assets/ painel.png" alt="painel_design" />
-        </div>
+
+        <img id="painel__img" src="assets/painel.png" alt="painel_design" />
       </div>
-   </section>
+    </section>
 
-    <section class="companies container flex__column">
-      <p id="companies__help">Empresas que ajudamos a crescer</p>
+    <section class="companies container">
+      <div class="companies__container container flex__column">
+        <p id="companies__help">Empresas que ajudamos a crescer</p>
+  
+        <div id="companies__partners">
+          <span>
+            <img src="assets/logosParceria/Group.png" alt="group#" />
+          </span>
+          <span>
+            <img src="assets/logosParceria/Group-1.png" alt="group#" />
+          </span>
+          <span>
+            <img src="assets/logosParceria/Group-2.png" alt="group#" />
+          </span>
+          <span>
+            <img src="assets/logosParceria/Group-3.png" alt="group#" />
+          </span>
+          <span>
+            <img src="assets/logosParceria/Group-4.png" alt="group#" />
+          </span>
+          <span>
+            <img src="assets/logosParceria/Group-5.png" alt="group#" />
+          </span>
+          <span>
+            <img src="assets/logosParceria/Group-6.png" alt="group#" />
+          </span>
+        </div>
 
-      <div id="companies__partners">
-        <span>
-          <img src="assets/logosParceria/Group.png" alt="group#" />
-        </span>
-        <span>
-          <img src="assets/logosParceria/Group-1.png" alt="group#" />
-        </span>
-        <span>
-          <img src="assets/logosParceria/Group-2.png" alt="group#" />
-        </span>
-        <span>
-          <img src="assets/logosParceria/Group-3.png" alt="group#" />
-        </span>
-        <span>
-          <img src="assets/logosParceria/Group-4.png" alt="group#" />
-        </span>
-        <span>
-          <img src="assets/logosParceria/Group-5.png" alt="group#" />
-        </span>
-        <span>
-          <img src="assets/logosParceria/Group-6.png" alt="group#" />
-        </span>
       </div>
 
     </section>
 
     <section class="fast__resume flex__center">
       <div class="fast_resume_c container flex__column">
-
         <div class="fast_resume--text">
           <p>Por que sou shakir</p>
           <h2>Especialmente projetado para pagamentos de criptografia</h2>
         </div>
 
         <div class="fast__cards">
-               
           <div class="card">
-              <img src="assets/card_payments/card1.png" id="cards--primary" alt="card_fast-resume" />
-              
+            <img
+              src="assets/card_payments/card1.png"
+              id="cards--primary"
+              alt="card_fast-resume"
+            />
 
             <div class="card--information">
               <h2>resumos rápidos</h2>
@@ -160,13 +137,10 @@
                 supera
               </p>
             </div>
-
           </div>
 
-                         
           <div class="card">
-              <img src="assets/card_payments/card2.png"alt="card_fast-resume" />
-              
+            <img src="assets/card_payments/card2.png" alt="card_fast-resume" />
 
             <div class="card--information">
               <h2>resumos rápidos</h2>
@@ -176,13 +150,10 @@
                 supera
               </p>
             </div>
-
           </div>
 
-                         
           <div class="card">
-              <img src="assets/card_payments/card3.png" alt="card_fast-resume" />
-              
+            <img src="assets/card_payments/card3.png" alt="card_fast-resume" />
 
             <div class="card--information">
               <h2>resumos rápidos</h2>
@@ -192,17 +163,17 @@
                 supera
               </p>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
 
     <section class="fast__payment background">
-      <div class="container">
-        <img src="./assets/fast_payments/Illustration.png" alt="fast_payments--logo" />
+      <div class="fast_payment--container container">
+        <img
+          src="./assets/fast_payments/Illustration.png"
+          alt="fast_payments--logo"
+        />
 
         <div class="information--text">
           <p class="information--primary">nosso recurso</p>
@@ -218,8 +189,7 @@
     </section>
 
     <section class="keep__updated background">
-      <div class="container">
-
+      <div class="keep__updated--container container">
         <div class="keep__udated--information">
           <p id="keep_udated__text--primary">nosso boletim informativo</p>
           <h2>mantenha-se atualizado com nossa newsletter semanal</h2>
@@ -238,16 +208,16 @@
           <input type="password" placeholder="password" />
           <button>get started</button>
         </form>
-      
       </div>
     </section>
 
     <section class="manage__expenses background">
-      <div class="container">
-
+      <div class="manage__expenses--container container">
         <div class="manage__expenses--information">
           <p class="title--primary">nosso recurso</p>
-          <h2 class="title--h2">Gerencie todas as despesas e receitas do seu painel</h2>
+          <h2 class="title--h2">
+            Gerencie todas as despesas e receitas do seu painel
+          </h2>
           <p class="title--secondary">
             por que manteve muito sempre em casa sra. Considerado simpatizar dez
             assistência extraordinariamente ocasional suficiente não carta de o
@@ -256,33 +226,41 @@
           <button class="button--primary">get started</button>
         </div>
 
-        <img src="./assets/manage__expenses/dailyActivites.png" alt="dailyActivites" />
+        <img
+          src="./assets/manage__expenses/dailyActivites.png"
+          alt="dailyActivites"
+        />
       </div>
-
     </section>
 
     <section class="happy__peoples background">
       <div class="happy--container container flex__column">
-        
         <div class="happy__peoples--text">
           <p class="title--primary">testemunho</p>
           <h2 class="title--h2">o que nosso usuário feliz diz</h2>
         </div>
 
         <div class="happy__peoples--cards">
-
           <span>
-            <img src="./assets/card_likes_peoples/Card01.png" alt="cards happy peoples" />
+            <img
+              src="./assets/card_likes_peoples/Card01.png"
+              alt="cards happy peoples"
+            />
           </span>
 
           <span>
-            <img src="./assets/card_likes_peoples/Card02.png" alt="cards happy peoples" />
+            <img
+              src="./assets/card_likes_peoples/Card02.png"
+              alt="cards happy peoples"
+            />
           </span>
 
           <span>
-            <img src="./assets/card_likes_peoples/Card03.png" alt="cards happy peoples" />
+            <img
+              src="./assets/card_likes_peoples/Card03.png"
+              alt="cards happy peoples"
+            />
           </span>
-
         </div>
       </div>
     </section>
@@ -352,6 +330,5 @@
         </nav>
       </div>
     </footer>
-
   </body>
 </html>
