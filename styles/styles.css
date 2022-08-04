@@ -39,6 +39,20 @@
   align-items: center;
 }
 
+.painel__background {
+  display: flex;
+  justify-content: flex-end;
+  background: red;
+  position: relative;
+}
+.painel__background img {
+  background: blue;
+  position: relative;
+  display: flex;
+  align-items: center;
+  right: 1px;
+}
+
 .background {
   display: flex;
   justify-content: center;
