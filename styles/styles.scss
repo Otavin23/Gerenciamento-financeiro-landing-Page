@@ -450,7 +450,7 @@ header {
 
 .manage__expenses {
   background: var(--background_secundary);
-
+  padding-top: 10rem;
 }
 .manage__expenses--container{
   @media (max-width: 924px){
@@ -531,7 +531,18 @@ header {
       height: 250px;
     }
   }
-
+  @media (max-width: 331px){
+    img{
+      width: 290px;
+      height: 250px;
+    }
+  }
+  @media (max-width: 220px){
+    img{
+      width: 280px;
+      height: 250px;
+    }
+  }
 }
 .assistance__finances {
   background: var(--background_secundary);
@@ -553,14 +564,21 @@ header {
     max-width: 500px;
   }
 }
-
 .footer__finances--b {
   background: var(--background_secundary);
   height: 50%;
-  padding: 2.5rem;
+}
+.footer__finances--container{
+  @media (max-width: 993px){
+    display: flex;
+    flex-wrap: wrap;
+  } 
 }
 #footer_finances {
   font-family: "Manrope";
+  @media (max-width: 993px){
+    margin-bottom: 1rem;
+  }
   h2 {
     text-transform: uppercase;
     font-size: 17px;
@@ -573,13 +591,25 @@ header {
     letter-spacing: -0.02em;
     text-transform: capitalize;
     max-width: 242px;
+    margin-bottom: 1rem;
   }
 }
 
 .footer__block {
   display: flex;
-  width: 70%;
+  @media (max-width: 681px){
+    flex-wrap: wrap;
+  }
   .footer__block--text {
+    @media (max-width: 681px){
+    padding-bottom: 2rem;
+    }
+    @media (max-width: 737px){
+      flex-wrap: wrap;
+      margin-right: 0;
+      margin-top: 1rem;
+    }
+  width: 70%;
     font-family: "Manrope";
     margin-right: 4rem;
     list-style: none;

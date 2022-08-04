@@ -501,6 +501,7 @@ header .nav__buttons #button--secondary {
 
 .manage__expenses {
   background: var(--background_secundary);
+  padding-top: 10rem;
 }
 
 @media (max-width: 924px) {
@@ -587,6 +588,18 @@ header .nav__buttons #button--secondary {
     height: 250px;
   }
 }
+@media (max-width: 331px) {
+  .happy__peoples--cards img {
+    width: 290px;
+    height: 250px;
+  }
+}
+@media (max-width: 220px) {
+  .happy__peoples--cards img {
+    width: 280px;
+    height: 250px;
+  }
+}
 
 .assistance__finances {
   background: var(--background_secundary);
@@ -613,11 +626,22 @@ header .nav__buttons #button--secondary {
 .footer__finances--b {
   background: var(--background_secundary);
   height: 50%;
-  padding: 2.5rem;
+}
+
+@media (max-width: 993px) {
+  .footer__finances--container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 #footer_finances {
   font-family: "Manrope";
+}
+@media (max-width: 993px) {
+  #footer_finances {
+    margin-bottom: 1rem;
+  }
 }
 #footer_finances h2 {
   text-transform: uppercase;
@@ -631,16 +655,34 @@ header .nav__buttons #button--secondary {
   letter-spacing: -0.02em;
   text-transform: capitalize;
   max-width: 242px;
+  margin-bottom: 1rem;
 }
 
 .footer__block {
   display: flex;
-  width: 70%;
+}
+@media (max-width: 681px) {
+  .footer__block {
+    flex-wrap: wrap;
+  }
 }
 .footer__block .footer__block--text {
+  width: 70%;
   font-family: "Manrope";
   margin-right: 4rem;
   list-style: none;
+}
+@media (max-width: 681px) {
+  .footer__block .footer__block--text {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 737px) {
+  .footer__block .footer__block--text {
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-top: 1rem;
+  }
 }
 .footer__block .footer__block--text li {
   margin-top: 0.5rem;
