@@ -261,7 +261,7 @@ header {
 .fast_resume--text {
   font-family: "Manrope";
   text-align: center;
-  p {
+  span {
     color: #3734a9;
     font-weight: 800;
     font-size: clamp(1rem, 1vh, 1rem);
@@ -461,6 +461,8 @@ header {
     }
   }
 }
+
+
 .manage__expenses--information {
   font-family: "Manrope";
 }
