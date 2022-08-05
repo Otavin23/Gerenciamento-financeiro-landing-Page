@@ -390,6 +390,7 @@ header .nav__buttons #button--secondary {
   font-weight: 700;
   font-size: 33px;
   color: black;
+  line-height: 40px;
 }
 .keep__udated--information #keep_updated__text--secondary {
   color: #757095;
