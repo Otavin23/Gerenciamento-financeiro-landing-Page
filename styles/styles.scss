@@ -353,19 +353,23 @@ header {
     text-transform: uppercase;
   }
   h2 {
+    margin-top: 1rem;
     text-transform: capitalize;
     letter-spacing: -0.03em;
     font-style: normal;
     font-weight: 700;
     font-size: 33px;
+    color: black;
   }
 
   #keep_updated__text--secondary {
-    font-weight: 400;
-    font-size: 16px;
     color: #757095;
-    letter-spacing: -0.02em;
     margin-top: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
   }
 }
 .keep__updated--container{
